@@ -41,10 +41,9 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Vehicle Telemetry"
         android:id="@+id/telemetryLabel"
-        android:layout_below="@+id/btnConnect"
+        android:layout_alignBottom="@+id/selectConnectionType"
         android:layout_alignLeft="@+id/connectionTypeLabel"
-        android:layout_alignStart="@+id/connectionTypeLabel"
-        android:layout_marginTop="20dp" />
+        android:layout_alignStart="@+id/connectionTypeLabel" />
 
     <TableLayout
         android:layout_width="fill_parent"
@@ -79,12 +78,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_column="1" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/vehTelemRow2">
 
             <TextView
                 android:layout_width="100dp"
@@ -92,7 +85,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Altitude:"
                 android:id="@+id/altitudeLabelTextView"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp" />
 
@@ -102,10 +95,17 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="0m"
                 android:id="@+id/altitudeValueTextView"
-                android:layout_column="1"
+                android:layout_column="3"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:layout_gravity="left" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/vehTelemRow2">
+
         </TableRow>
 
         <TableRow
@@ -133,12 +133,6 @@
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:layout_gravity="left" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/vehTelemRow4">
 
             <TextView
                 android:layout_width="100dp"
@@ -146,7 +140,7 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Distance:"
                 android:id="@+id/distanceLabelTextView"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp" />
 
@@ -156,10 +150,17 @@
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="0m"
                 android:id="@+id/distanceValueTextView"
-                android:layout_column="1"
+                android:layout_column="3"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
                 android:layout_gravity="left" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/vehTelemRow4">
+
         </TableRow>
 
         <TableRow
